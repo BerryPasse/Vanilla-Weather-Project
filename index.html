@@ -13,30 +13,33 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Vanilla Weather App</title>
   </head>
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <h1>San Antonio</h1>
+          <h1 id ="city"></h1>
           <ul>
-            <li>Saturday 4:00 pm</li>
-            <li>Sunny</li>
+            <li id="date"></li>
+            <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-icon">
                 <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="float-left" />
-                <div class="float-left"></div>
-                <strong>82°F</strong>
+                <div class="float-left">
+                <strong id = "temperature"></strong>
+                <span id ="units">°F</span>
                 </div>
+              </div>
               </div>
               <div class="col-6">
                 <ul>
-                  <li>Percipation: 25%</li>
-                  <li>Humidity: 50%</li>
-                  <li>Wind: 13%</li>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  
+                  <li>Wind: <span id= "wind"></span> mph</li>
                 </ul>
                 <small>
                   <a
