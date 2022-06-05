@@ -20,6 +20,24 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id = "search-form" class="mb-4">
+            <div class = "row">
+              <div class="col-9">
+          <input
+          type="search" placeholder="Enter city name"
+          class ="form-control"
+          id ="city-input"
+          autofocus="on"
+          />
+              </div>
+              <div class ="col-3">
+          <input
+          type = "submit" value = "Search"
+          class="btn btn-primary w-100" />
+             </div>
+          </div>
+          </form>
+        
           <h1 id ="city"></h1>
           <ul>
             <li id="date"></li>
@@ -28,7 +46,7 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-icon">
-                <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" class="float-left" />
+                <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
                 <strong id = "temperature"></strong>
                 <span id ="units">°F</span>
@@ -42,8 +60,7 @@
                   <li>Wind: <span id= "wind"></span> mph</li>
                 </ul>
                 <small>
-                  <a
-                    href="https://github.com/BerryPasse/Vanilla-Weather-Project"
+                  <a href="https://github.com/BerryPasse/Vanilla-Weather-Project"
                   >
                     Open Source code
                   </a>
