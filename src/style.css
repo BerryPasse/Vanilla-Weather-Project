@@ -41,3 +41,16 @@ small {
 .weather-icon strong {
   font-size: 25px;
 }
+
+.weather-forecast {
+  margin-top: 20 px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 13px;
+}
+
+weather-forecast-temperatures {
+  font-size: 13px;
+}
