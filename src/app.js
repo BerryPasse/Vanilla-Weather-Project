@@ -30,6 +30,29 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+  <div class="weather-forecast-date">
+   ${day}</div> 
+  <img src="http://openweathermap.org/img/wn/03n@2x.png" alt="" width="38"/>
+   <div class="weather-forecast-temperatures">
+   <span class="weather-forecast-high">68</span>
+   <span class="weather-forecast-low">45</span>
+     </div>
+   </div>
+   `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -91,7 +114,9 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search("New York");
+search("Miami");
+displayForecast();
+
 //let apiKey = "5d7ac2056c0edbd0916ff4c0375b0145";
 //let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 //axios.get(apiUrl).then(displayTemperature);
