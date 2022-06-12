@@ -24,8 +24,19 @@ li {
 small {
   font-size: 9px;
 }
+
+hr {
+  font-weight: 50;
+}
+
+footer {
+  text-align: center;
+  font-size: small;
+}
+
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 700px;
+  max-height: 600px;
   margin: 30px auto;
 }
 .weather-app {
