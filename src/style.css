@@ -41,16 +41,17 @@ footer {
 }
 .weather-app {
   padding: 20px;
-  border: 1px solid #4c3575;
-  border-radius: 20px;
+  border: 1px solid #a5becc;
+  border-radius: 10px;
 }
 
 .weather-icon img {
-  max-width: 40px;
+  max-width: 200px;
 }
 
 .weather-icon strong {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .weather-forecast {
